@@ -1,0 +1,84 @@
+/* header.css */
+:root {
+  --blue: #0074D9;
+  --red: #B31313;
+}
+
+.main-header {
+  background: #ffffff;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 85px; 
+  z-index: 9999;
+  border-bottom: 2px solid #f4f4f4;
+  box-sizing: border-box;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute; /* Sits at top initially */
+  top: 0;
+  left: 0;
+}
+
+/* STICKY CLASS TRIGGERED BY JS */
+.main-header.sticky {
+  position: fixed;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.logo-container img { 
+  height: 60px; 
+  width: auto;
+  transition: 0.3s;
+}
+
+.main-header.sticky .logo-container img {
+  height: 45px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 0;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* INTUITIVE BLUE UNDERLINE */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blue);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .main-header { padding: 0 5%; }
+  .nav-menu ul { gap: 20px; }
+}

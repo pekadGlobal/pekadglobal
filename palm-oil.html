@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Red Palm Oil | PEKAD GLOBAL</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+      <!-- HEADER -->
+    <header class="main-header" id="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="images\pekadglobal.jpeg" alt="Logo"></a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-container">
+        <div class="product-gallery">
+            <div class="main-img-container">
+                <img id="mainProductImg" src="https://codesignite.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-28-2026-05_24_45-PM.jpg" alt="Palm Oil Main">
+            </div>
+            <div class="thumbnail-row">
+                <div class="thumb active" onclick="changeImage('https://codesignite.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-28-2026-05_24_45-PM.jpg', this)">
+                    <img src="https://codesignite.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-28-2026-05_24_45-PM.jpg">
+                </div>
+                </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Wholesale Premium Red Palm Oil</h1>
+            <div class="price-tag">Export Grade Quality</div>
+            
+            <div class="product-description">
+                <p>Our Red Palm Oil is 100% pure, unrefined, and extracted from the finest oil palm fruits. Naturally loaded with Beta-Carotene (Vitamin A) and Tocotrienols (Vitamin E), it delivers a rich, vibrant color and a smooth, earthy flavor.</p>
+                <p><strong>Available Sizes:</strong> 5L, 10L, 25L, and Bulk Industrial Drums.</p>
+            </div>
+
+            <a href="https://wa.me/2348155463504?text=Hello,%20I%20want%20to%20order%20the%20Premium%20Red%20Palm%20Oil" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+            </a>
+        </div>
+    </main>
+
+    <section class="order-form-section">
+        <div class="order-form-container">
+            <h3>Place Your Order Inquiry</h3>
+            <div class="form-card"> <form action="https://formspree.io/f/joyimozemhe7@gmail.com" method="POST">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Quantity Needed (e.g. 50 Liters)</label>
+                        <input type="text" name="quantity" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Delivery Location</label>
+                        <input type="text" name="location" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Additional Notes</label>
+                        <textarea name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Order Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div>
+        <h4>PEKAD GLOBAL</h4>
+        <p>Exporting excellence in agro-processing since 2026.</p>
+        <div class="social-box">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Inquiry Form</h4>
+        <form class="fancy-form" action="https://formspree.io/f/joyimozemhe7@gmail.com" method="POST" style="width: 100%;">
+            <input type="email" name="email" placeholder="Your Email" required 
+                   style="width:100%; max-width: 400px; margin-bottom:10px; padding:12px; border-radius:5px; border:1px solid #333; background:#222; color:white;">
+            <textarea name="message" placeholder="Your Message" rows="3" required 
+                      style="width:100%; max-width: 400px; margin-bottom:10px; padding:12px; border-radius:5px; border:1px solid #333; background:#222; color:white;"></textarea>
+            <button type="submit" class="submit-btn" style="width:100%; max-width: 400px;">Send Message</button>
+        </form>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
